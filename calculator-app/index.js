@@ -1,21 +1,23 @@
-// document.getElementById("count-el").innerText = 5;
+let n1 = document.getElementById("n1");
+let n2 = document.getElementById("n2");
+let res = document.getElementById("result");
 
-let count = 0;
-
-// let myAge = 22 + 12;
-
-// console.log(myAge);
-
-function increment_count(){
-    console.log("The  button was clicked")
-    count++;
-    document.getElementById("count-el").innerText = count;
-
+function add(){
+    r = parseInt(n1.value) + parseInt(n2.value);
+    res.textContent = r;
 }
 
-function save(){
-    console.log(count);
-    document.getElementById("logging").textContent += count + " - ";
-    count = 0;
-    document.getElementById("count-el").innerText = 0;
+function sub(){
+    r = parseInt(n1.value) - parseInt(n2.value);
+    res.textContent = r;
+}
+
+function mul(){
+    r = parseInt(n1.value) * parseInt(n2.value);
+    res.textContent = r;
+}
+
+function div(){
+    r = parseInt(n1.value) / parseInt(n2.value);
+    res.textContent = r;
 }
